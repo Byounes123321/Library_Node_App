@@ -2,13 +2,14 @@ extends layout
 
 block main-content 
     h1.page-title Libraries
-        ul 
-            each l in libs
-                - let libName = l.querySelector("name").textContent;
-                - let libAddress = l.querySelector("address").textContent ;
-                - let libNumb = l.querySelector("phoneNumber").textContent ;
-                - let libDesc = l.querySelector("description").textContent;
-                - let libID = l.getAttribute("id");
+    ul 
+        each l in libs
+            - let libName = l.querySelector("name").textContent;
+            - let libAddress = l.querySelector("address").textContent ;
+            - let libNumb = l.querySelector("phoneNumber").textContent ;
+            - let libDesc = l.querySelector("description").textContent;
+            - let libID = l.getAttribute("id");
+            div
                 h2 
                     a( href=`/branch/${libID}`) #{libName}
                 p #{libAddress}

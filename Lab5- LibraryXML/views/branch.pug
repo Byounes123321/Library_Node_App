@@ -2,6 +2,8 @@ extends layout
 
 block main-content
     h1.page-title Branch
+    p 
+        a(href= "/") Back to list
     - let libName = branch.querySelector("name").textContent;
     - let libAddress = branch.querySelector("address").textContent ;
     - let libNumb = branch.querySelector("phoneNumber").textContent ;
