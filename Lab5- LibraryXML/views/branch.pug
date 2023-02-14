@@ -1,0 +1,12 @@
+extends layout 
+
+block main-content
+    h1.page-title Branch
+    - let libName = branch.querySelector("name").textContent;
+    - let libAddress = branch.querySelector("address").textContent ;
+    - let libNumb = branch.querySelector("phoneNumber").textContent ;
+    - let libDesc = branch.querySelector("description").textContent;
+    h2 #{libName}
+    p #{libAddress}
+    p #{libNumb}
+    p !{libDesc}
